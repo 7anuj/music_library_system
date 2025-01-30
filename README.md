@@ -1,13 +1,13 @@
-Music Files Management System
+#Music Files Management System
 
 
-Project Overview
+#Project Overview
 
 
 The Music Files Management System is a database-driven application designed to efficiently manage digital audio files. Built using Python, MySQL (PyMySQL), and Tkinter, the system allows users to add, delete, and explore audio files based on multiple attributes such as genre, language, and album. It provides an intuitive and user-friendly graphical interface to organize and interact with a music collection.
 
 
-Features
+#Features
 
 
 Add Songs: Users can input song details and store them in a MySQL database.
@@ -18,7 +18,7 @@ User-friendly GUI: Built with Tkinter for seamless interaction.
 Efficient Data Management: Uses MySQL for structured data storage and retrieval.
 
 
-Technologies Used
+#Technologies Used
 
 
 Python (Core logic & GUI handling)
@@ -27,13 +27,13 @@ Tkinter (Graphical User Interface)
 PyMySQL (Database connection)
 
 
-Database Structure
+#Database Structure
 
 
 The system utilizes a relational database model, ensuring data integrity through normalization and functional dependencies.
 
 
-Key Tables:
+#Key Tables:
 
 
 Tracks – Stores details like track title, artist, album, genre, language, release date, file location, and duration.
@@ -43,7 +43,7 @@ Genres – Categorizes tracks based on genre.
 Languages – Stores the languages associated with tracks.
 
 
-Functional Dependencies
+#Functional Dependencies
 
 
 Track ID -> Title, Artist ID, Album ID, Genre ID, Language ID, Release Date, File Location, Duration
@@ -53,7 +53,7 @@ Genre ID -> Genre Name
 Language ID -> Language Name
 
 
-Installation & Setup
+#Installation & Setup
 
 
 Install Dependencies:
@@ -62,21 +62,19 @@ pip install pymysql
 
 
 
-Set up the MySQL Database:
+#Set up the MySQL Database:
 
 Create a MySQL database and tables as per the schema provided in backend.py.
 Update database connection details in the script.
 
 
-Run the Application:
+#Run the Application:
 
 python main.py
 
 
 
-
-
-File Structure
+#File Structure
 
 
 backend.py – Handles database interactions (CRUD operations).
@@ -88,7 +86,7 @@ viewgenre.py – Filters songs by genre.
 viewlanguages.py – Categorizes songs based on language.
 
 
-Future Enhancements
+#Future Enhancements
 
 
 User Profiles: Enable personalized recommendations and playlists.
@@ -98,7 +96,7 @@ Music Details Update: Allow updating artist and album details.
 Streaming Service Integration: Connect with online music platforms for a richer experience.
 
 
-References:
+#References:
 
 
 Tkinter Documentation
